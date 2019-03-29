@@ -1,5 +1,17 @@
 app.module.ts -> import { FormsModule } from '@angular/forms';  // untuk gunakan ngModel
 
+## Menggunakan ngModel
+- Buka app.module.ts, tambahkan
+```
+import { FormsModule } from '@angular/forms';
+...
+imports: [
+  ...
+  FormsModule,
+  ...
+]
+...  
+```
 
 ## Create new Project
 ```
