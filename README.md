@@ -1,5 +1,8 @@
 app.module.ts -> import { FormsModule } from '@angular/forms';  // untuk gunakan ngModel
 
+# Sample Code
+D:\PROJECT\RESEARCH\angular 5\ng5
+
 ## Menggunakan ngModel
 - Buka app.module.ts, tambahkan
 ```
