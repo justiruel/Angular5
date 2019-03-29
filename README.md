@@ -1,5 +1,7 @@
 app.module.ts -> import { FormsModule } from '@angular/forms';  // untuk gunakan ngModel
-
+scope
+stringify
+gowo param navigasion
 # Sample Code
 D:\PROJECT\RESEARCH\angular 5\ng5
 
@@ -20,6 +22,54 @@ imports: [
 ```
 ng new ng5 --style=scss --routing
 ```
+## Routing 
+- Pastikan saat create new project gunakan option '--routing'
+- app-routing.module.ts tambahkan
+```
+import {HomeComponent} from './home/home.component';
+import {AboutComponent} from './about/about.component';
+...
+const routes: Routes = [
+  {
+    path:'',
+    component:HomeComponent
+  },
+  {
+    path:'about/:id',
+    component:AboutComponent
+  }
+];
+```
+- penggunaan ->
+```
+<li><a routerLink="about/48">About</a></li>
+```
+-nangkap :id (48)
+```
+import { ActivatedRoute } from '@angular/router';
+```
+```
+constructor -> private route : ActivatedRoute
+atau
+tidak ditaruh constructor -> route : ActivatedRoute = new ActivatedRoute()
+```
+```
+this.route.params.subscribe(res => console.log(res.id));
+```
+- pindah halaman
+```
+import { Router } from '@angular/router';
+```
+```
+constructor -> private router : Router
+atau
+tidak ditaruh constructor -> router : Router = new Router()
+```
+```
+this.router.navigate(['path']); //'path' lihat di app-routing.module.ts
+```
+
+
 
 ## Run Project
 ```
