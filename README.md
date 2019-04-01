@@ -2,8 +2,7 @@ app.module.ts -> import { FormsModule } from '@angular/forms';  // untuk gunakan
 stringify
 - scope == variable angular5
 - root scope == service angular5
-Shared component
-Directive
+Shared component tanya zaki
 # Sample Code
 D:\PROJECT\RESEARCH\angular 5\ng5
 
@@ -81,8 +80,6 @@ this.activatedRoute.queryParams.subscribe(res => console.log(res.naruto))
 
 ```
 
-
-
 ## Run Project
 ```
 ng serve --environment=prod --port=4100
@@ -119,4 +116,28 @@ npm install moment --save    //akan kesimpan di node_modules
 import * as moment from 'moment';
 ....
 moment().format('MMMM Do YYYY, h:mm:ss a')
+```
+
+## Directive
+```
+ng generate directive highlight
+```
+directive sederhana
+```
+import { Directive, ElementRef } from '@angular/core';
+
+@Directive({
+  selector: '[appHighlight]'
+})
+export class HighlightDirective {
+
+  constructor(el: ElementRef) {
+    el.nativeElement.style.backgroundColor = 'yellow';
+  }
+
+}
+```
+appHighlight boleh dipakai komponen apa saja 
+```
+<p appHighlight>Highlight me!</p>
 ```
