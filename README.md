@@ -2,7 +2,7 @@ app.module.ts -> import { FormsModule } from '@angular/forms';  // untuk gunakan
 stringify
 - scope == variable angular5
 - root scope == service angular5
-Shared component tanya zaki
+# Shared component, SharedModule tanya zaki
 # Sample Code
 D:\PROJECT\RESEARCH\angular 5\ng5
 
