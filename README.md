@@ -1,6 +1,9 @@
 app.module.ts -> import { FormsModule } from '@angular/forms';  // untuk gunakan ngModel
-scope
 stringify
+- scope == variable angular5
+- root scope == service angular5
+Shared component
+Directive
 # Sample Code
 D:\PROJECT\RESEARCH\angular 5\ng5
 
