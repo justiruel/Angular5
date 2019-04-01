@@ -69,12 +69,13 @@ this.router.navigate(['path']); //'path' lihat di app-routing.module.ts
 ```
 - membawa parameter
 ```
-this.router.navigate([''], { queryParams: { naruto: 1 } });
+this.router.navigate([''], { queryParams: { naruto: 1 } }); //https://angular.io/api/router/NavigationExtras
 ```
 - nangkap param 
 ```
 constructor -> private activatedRoute: ActivatedRoute
 this.activatedRoute.queryParams.subscribe(res => console.log(res.naruto))
+
 ```
 
 
