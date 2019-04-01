@@ -105,3 +105,14 @@ ng build --prod --environment=prod		//deploying
 
 ```
 ref : https://www.oodlestechnologies.com/blogs/Setting-Up-Environment-Variables-In-Angular-5
+
+## library
+```
+npm install moment --save    //akan kesimpan di node_modules
+```
+- Penggunaan
+```
+import * as moment from 'moment';
+....
+moment().format('MMMM Do YYYY, h:mm:ss a')
+```
