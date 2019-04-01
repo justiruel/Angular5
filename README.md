@@ -1,7 +1,6 @@
 app.module.ts -> import { FormsModule } from '@angular/forms';  // untuk gunakan ngModel
 scope
 stringify
-gowo param navigasion
 # Sample Code
 D:\PROJECT\RESEARCH\angular 5\ng5
 
@@ -67,6 +66,15 @@ tidak ditaruh constructor -> router : Router = new Router()
 ```
 ```
 this.router.navigate(['path']); //'path' lihat di app-routing.module.ts
+```
+- membawa parameter
+```
+this.router.navigate([''], { queryParams: { naruto: 1 } });
+```
+- nangkap param 
+```
+constructor -> private activatedRoute: ActivatedRoute
+this.activatedRoute.queryParams.subscribe(res => console.log(res.naruto))
 ```
 
 
