@@ -1,7 +1,7 @@
 - stringify
 - scope == variable angular5
 - root scope == service angular5
-# Shared component, SharedModule tanya zaki
+# SharedModule tanya zaki
 # Sample Code
 D:\PROJECT\RESEARCH\angular 5\ng5
 
@@ -117,7 +117,7 @@ import * as moment from 'moment';
 moment().format('MMMM Do YYYY, h:mm:ss a')
 ```
 
-## Directive
+## Directive / Shared Component
 ```
 ng generate directive highlight
 ```
